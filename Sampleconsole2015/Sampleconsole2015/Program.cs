@@ -11,6 +11,7 @@ namespace Sampleconsole2015
         static void Main(string[] args)
         {
             Console.WriteLine("2015");
+            Console.ReadLine();
         }
     }
 }
