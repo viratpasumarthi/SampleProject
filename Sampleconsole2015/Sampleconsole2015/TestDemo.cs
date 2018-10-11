@@ -1,4 +1,6 @@
 ﻿using NUnit.Framework;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Firefox;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,13 +12,26 @@ namespace Sampleconsole2015
     [TestFixture]
     class TestDemo
     {
-        [TestCase]
-        public void add()
+        IWebDriver driver;
+        [SetUp]
+        public void initialise()
         {
-            MyClass MC1 = new MyClass();
-                Assert.AreEqual(200, MC1.add(10, 200));
+            driver = new FirefoxDriver();
+            driver.Manage().Window.Maximize();
+        }
 
+        [Test]
+        public void OpenAppTets()
+        {
+            driver.Navigate().GoToUrl("http://iircdev.niu.edu/2017");
+            // driver.
+        }
 
+        [TearDown]
+        public void EndTest()
+        {
+            driver.Close();
         }
     }
 }
+
