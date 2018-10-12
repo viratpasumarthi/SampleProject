@@ -18,6 +18,7 @@ namespace Sampleconsole2015
             MC.c = MC.add(10, 200);
             Console.WriteLine("My Result is : "+ MC.c.ToString());
             Console.ReadLine(); 
+
         }
     }
 }
