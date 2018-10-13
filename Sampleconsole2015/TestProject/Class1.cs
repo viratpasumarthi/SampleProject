@@ -15,14 +15,23 @@ namespace TestProject
         [SetUp]
         public void initialise()
         {
+            var timespan = TimeSpan.FromMinutes(3);
+            var options = new FirefoxOptions();
+           // var service = new FirefoxDriverService()
             driver = new FirefoxDriver();
+            driver.Manage().Timeouts().PageLoad = TimeSpan.FromMinutes (3);
+            //new FirefoxDriver(FirefoxBinary,FirefoxProfile,timespan);
             driver.Manage().Window.Maximize();
+
+
+            //var driver = new FirefoxDriver(binary, profile, timeSpan);
         }
 
         [Test]
         public void OpenAppTets()
         {
             // gecko
+
             driver.Navigate().GoToUrl("http://iircdev.niu.edu/2017");
             // driver.
         }
