@@ -22,6 +22,7 @@ namespace TestProject
         [Test]
         public void OpenAppTets()
         {
+            // gecko
             driver.Navigate().GoToUrl("http://iircdev.niu.edu/2017");
             // driver.
         }
