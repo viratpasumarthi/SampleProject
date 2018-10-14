@@ -8,6 +8,7 @@ namespace SampleWebApplication
     {
         public void Configuration(IAppBuilder app)
         {
+            //Added Authentication App
             ConfigureAuth(app);
         }
     }
