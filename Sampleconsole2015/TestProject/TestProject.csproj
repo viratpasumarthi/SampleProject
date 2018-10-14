@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Baseclass.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="Hooks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
