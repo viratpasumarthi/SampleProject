@@ -13,7 +13,7 @@ namespace TestProject
     {
         //public object Driver { get; private set; }
 
-        //IWebDriver driver;
+        public IWebDriver driver;
         [SetUp]
         public void initialise()
         {
