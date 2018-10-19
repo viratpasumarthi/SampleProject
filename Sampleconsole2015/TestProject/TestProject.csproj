@@ -74,6 +74,12 @@
     </Content>
     <Content Include="Readme.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sampleconsole2015\Sampleconsole2015.csproj">
+      <Project>{17e68c7b-010e-4a1b-a58b-dd8775846900}</Project>
+      <Name>Sampleconsole2015</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

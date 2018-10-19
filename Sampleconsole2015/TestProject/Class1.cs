@@ -6,12 +6,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Sampleconsole2015;
 
 namespace TestProject
 {
 
-    public class Class1
-    {   [SetUp]
+    public class Class1       
+    {
+
+        [SetUp]
         public void initialise()
         {
             var timespan = TimeSpan.FromMinutes(3);
@@ -20,7 +23,7 @@ namespace TestProject
         }
 
         [Test]
-        public void OpenAppTets()
+        public void Integration_Test()
         {
 
             FirefoxDriverService service = FirefoxDriverService.CreateDefaultService();
@@ -30,6 +33,13 @@ namespace TestProject
             driver.Navigate().GoToUrl("http://iircdev.niu.edu/2017");
             driver.Close();
             
+        }
+        [Test]
+        public void unit_test1()
+        {
+            Program myprog = new Program();
+            int a = 10, b = 20;
+            Assert.AreEqual(30,myprog.add(a, b));
         }
 
         [TearDown]

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sampleconsole2015
 {
-    class Program
+    public class Program
     {
         public int a = 10, b = 100, c = 0;
         static void Main(string[] args)
@@ -15,6 +15,13 @@ namespace Sampleconsole2015
             MC.c = MC.add(10, 200);
             Console.WriteLine("My Result is : "+ MC.c.ToString());
             Console.ReadLine(); 
+        }
+
+        public int  add (int a , int b)
+        {
+            return a + b;
+
+
         }
     }
 }
