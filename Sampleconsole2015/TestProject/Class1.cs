@@ -27,7 +27,7 @@ namespace TestProject
         {
             Program myprog = new Program();
             int a = 10, b = 20;
-            Assert.AreEqual(30, myprog.add(a, b));
+            Assert.AreEqual(40, myprog.add(a, b));
         }
 
         [Test] // Integration Testing
