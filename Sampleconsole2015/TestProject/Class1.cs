@@ -22,7 +22,15 @@ namespace TestProject
             
         }
 
-        [Test]
+        [Test] // Unit Testing
+        public void unit_test1()
+        {
+            Program myprog = new Program();
+            int a = 10, b = 20;
+            Assert.AreEqual(30, myprog.add(a, b));
+        }
+
+        [Test] // Integration Testing
         public void Integration_Test()
         {
 
@@ -34,13 +42,7 @@ namespace TestProject
             driver.Close();
             
         }
-        [Test]
-        public void unit_test1()
-        {
-            Program myprog = new Program();
-            int a = 10, b = 20;
-            Assert.AreEqual(30,myprog.add(a, b));
-        }
+        
 
         [TearDown]
         public void EndTest()
